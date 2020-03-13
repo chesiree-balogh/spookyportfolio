@@ -49,6 +49,7 @@ nav ul {
   flex-wrap: wrap;
   padding: 0;
   width: 100%;
+  padding-bottom: 2.5rem;
 }
 
 nav ul li {
@@ -111,6 +112,72 @@ button.block {
   color: whitesmoke;
   background-color: black;
   padding: 16px 28px;
-  font-size: 161.5rempx;
+  font-size: .75rem;
   cursor: pointer;
+}
+
+@media (min-width: 10px) {
+  .photos us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .photos li {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width:700px) {
+  .photos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .drAcula {
+    width: 20%;
+    margin-left: 4rem;
+  }
+  .photos li {
+    flex-basis: 50%;
+  }
+  .photos img {
+    width: 93%;
+    height: 93%;
+  }
+  nav ul {
+    width: 90%;
+  }
+  .into h1 {
+    width: 73%;
+    margin-left: 7rem;
+    font-size: 3rem;
+  }
+  .into {
+    margin-bottom: 6rem;
+  }
+  nav ul {
+    padding-bottom: .5rem;
+  }
+  footer {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .block {
+    width: 15%;
+    padding: 14px 13px;
+    font-size: .7rem;
+  }
+}
+
+@media (min-width:1000px) {
+  .photos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .photos li {
+    flex-basis: 33.33%;
+  }
 }
