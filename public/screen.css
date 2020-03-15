@@ -7,7 +7,7 @@ html {
 }
 
 .drAcula {
-  color: #D7D7D7;
+  color: #d7d7d7;
   font-size: 1.4rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -19,6 +19,7 @@ body {
   min-height: 100%;
   background-color: #333333;
   align-content: center;
+  justify-content: space-evenly;
 }
 
 .into {
@@ -29,7 +30,7 @@ body {
 }
 
 .redText {
-  color: #FD5C5B;
+  color: #fd5c5b;
 }
 
 .into h1 {
@@ -38,7 +39,7 @@ body {
   line-height: 3rem;
   /* font-weight: 700; */
   font-size: 2.5rem;
-  color: #D7D7D7;
+  color: #d7d7d7;
   width: 100%;
   margin: 0;
 }
@@ -57,7 +58,7 @@ nav ul li {
 }
 
 .redNav {
-  color: #FD5C5B;
+  color: #fd5c5b;
   list-style: none;
   padding-right: 1.5rem;
   padding-left: 1rem;
@@ -65,14 +66,14 @@ nav ul li {
 }
 
 .greyNav {
-  color: #7A7A7A;
+  color: #7a7a7a;
   list-style: none;
   padding-right: 1.5rem;
 }
 
 .photos ul {
   list-style: none;
-  padding: .75rem;
+  padding: 0.75rem;
   margin: 0%;
 }
 
@@ -90,7 +91,7 @@ img {
 }
 
 footer {
-  color: #D7D7D7;
+  color: #d7d7d7;
   text-align: center;
   font-size: 1rem;
   margin-top: 6rem;
@@ -112,11 +113,17 @@ button.block {
   color: whitesmoke;
   background-color: black;
   padding: 16px 28px;
-  font-size: .75rem;
+  font-size: 0.75rem;
   cursor: pointer;
 }
 
 @media (min-width: 10px) {
+  .hiddenNav ul {
+    visibility: hidden;
+  }
+  .button2 {
+    visibility: hidden;
+  }
   .photos us {
     display: flex;
     flex-wrap: wrap;
@@ -127,7 +134,49 @@ button.block {
   }
 }
 
-@media (min-width:700px) {
+@media (min-width: 700px) {
+  .hiddenNav {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hiddenNav ul {
+    visibility: visible;
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .hiddenNav li {
+    margin-right: 0;
+  }
+  .drAcula2 {
+    color: #d7d7d7;
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 20%;
+    margin-left: 4rem;
+  }
+  .hiddenNav button {
+    margin: 0;
+    block-size: 0;
+    color: whitesmoke;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: block;
+    width: 80%;
+    border: none;
+    color: whitesmoke;
+    background-color: black;
+    padding: 16px 28px;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
   .photos ul {
     display: flex;
     flex-wrap: wrap;
@@ -135,9 +184,13 @@ button.block {
     padding-right: 0;
     padding-left: 0;
   }
+  /* ja;lskdfkasjdfkas;dkfja */
+  /* ksdjf;kajsd;klfjakl;df */
+  /* laskdjf;kasjd;fkasdjas;kldfj */
   .drAcula {
-    width: 20%;
-    margin-left: 4rem;
+    visibility: hidden;
+    /* width: 20%;
+    margin-left: 4rem; */
   }
   .photos li {
     flex-basis: 50%;
@@ -145,6 +198,11 @@ button.block {
   .photos img {
     width: 93%;
     height: 93%;
+    /* object-fit: cover;
+    width: 20rem;
+    height: 20rem;
+    margin: .5rem;
+    margin-right: .5rem; */
   }
   nav ul {
     width: 90%;
@@ -158,7 +216,7 @@ button.block {
     margin-bottom: 6rem;
   }
   nav ul {
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
   footer {
     text-align: center;
@@ -167,11 +225,11 @@ button.block {
   .block {
     width: 15%;
     padding: 14px 13px;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 }
 
-@media (min-width:1000px) {
+@media (min-width: 1000px) {
   .photos ul {
     display: flex;
     flex-wrap: wrap;
